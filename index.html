@@ -1,61 +1,72 @@
 <!DOCTYPE html>
-<title>Cheap Stuff In Germany</title>
+<title>Cheap Electronics In Germany</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 body {
     color: white;
     background: #333;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    max-width: 800px;
 }
 
-a {
-    color: gray;
+main, footer {
+  margin: auto;
+  padding: 10px;
+}
+
+main {
+  flex: 1;
+  min-height: 80vh;
+}
+
+main div {
+  margin-top: 20px;
 }
 
 h1 {
     font-size: 50pt;
     margin-top: 20px;
 }
+
 ul {
   list-style-type: none;
 }
-ul > li {
+li {
     font-size: 30pt;
+    border-radius: 10px;
 }
-ul > li > a {
+li > a {
     text-decoration: none;
     display: block;
     border-radius: 10px;
     width: 100%;
-    height: 100%;
 }
-ul > li > a:hover {
+li > a:hover {
     background-color: black;
 }
 
-ul > li {
-    border-radius: 10px;
+a {
+    color: gray;
+    padding: 5px;
 }
 
-body > div {
-    margin-top: 20px;
-}
-
-main {
-  max-width: 800px;
-  margin: auto;
-}
 footer {
-      font-size: small;
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
+  flex: 0;
+  text-align: center;
+  font-size: small;
+}
 </style>
 <main>
   <div>
@@ -87,8 +98,8 @@ footer {
 
 <footer>
   <div>
-    This site contains links to pages to find used / cheap stuff in Germany. 
-     Contents of linked pages are not controlled by the author of this page and do not imply any kind of endorsement.
+    This page contains links to pages to find used / cheap electronics in Germany.
+    Contents of linked pages are not controlled by the author of this page and do not imply any kind of endorsement.
+    <script src="https://inform.everyone.wtf/legal.min.js"></script>
   </div>
-  <script src="https://inform.everyone.wtf/legal.min.js"></script>
 </footer>
